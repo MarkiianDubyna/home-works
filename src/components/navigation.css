@@ -1,0 +1,32 @@
+.navigation {
+    display: flex;
+    height: 155px;
+    width: 106px;
+    margin: 0;
+}
+.nav_buttons {
+    width: 100px;
+    height: 100%;
+    padding-right: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+a {
+    text-decoration: none;
+}
+.navigation a {
+    background: lavender;
+    border: 1px solid darkmagenta;
+    border-radius: 10px;
+    text-align: center;
+}
+a:active {
+    background: darkmagenta;
+    color:white;
+}
+.navigation_line {
+    width: 1px;
+    height: 100%;
+    background: linear-gradient(darkmagenta, white);
+}
