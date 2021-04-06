@@ -16,7 +16,7 @@ export default function TodoDetails (props) {
     return (
         <div className="todoDetails content">
                     <h3>Title - {todo.title}</h3>
-                    {/*<p>Status - {todo.completed.toString()}</p>*/}
+                    <p>Status - {todo.completed.toString()}</p>
                     {/*{console.log(todo.completed.toString())}*/}
         </div>
     )
