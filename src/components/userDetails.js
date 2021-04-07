@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from "react";
 import './content.css'
 import {useParams} from "react-router-dom";
-export default function UserDetails (props) {
+export default function UserDetails () {
     const [user, setUser] = useState([]);
     const {id} = useParams();
     const fetchData = async () => {

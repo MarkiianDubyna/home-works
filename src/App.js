@@ -1,90 +1,19 @@
 import React from "react";
 import './App.css'
 import './components/content.css'
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-} from "react-router-dom";
+import Routes from "./routes";
 import Navigation from "./components/navigation";
-import Posts from "./components/posts";
-import Comments from "./components/comments";
-import Photos from "./components/photos";
-import Albums from "./components/albums";
-import Todos from "./components/todos";
-import Users from "./components/users";
-import PostDetails from "./components/postDetails";
-import CommentDetails from "./components/commentDetails";
-import AlbumDetails from "./components/albumDetails";
-import PhotoDetails from "./components/photoDetails";
-import TodoDetails from "./components/todoDetails";
-import UserDetails from "./components/userDetails";
-function App() {
-  return (
-  <div className="App">
 
-    <Router>
-        <Navigation />
-      <Switch>
-          <Route path='/posts' exact>
-            <Posts />
-          </Route>
-          <Route path='/comments' exact>
-            <Comments />
-          </Route>
-          <Route path='/albums' exact>
-            <Albums />
-          </Route>
-          <Route path='/photos' exact>
-            <Photos />
-          </Route>
-          <Route path='/todos' exact>
-            <Todos />
-          </Route>
-          <Route path='/users' exact>
-            <Users />
-          </Route>
-          <Route path='/' exact>
-            <h2 className="content"> This is Home page. Please select some frome left </h2>
-          </Route>
-      </Switch>
-      <Switch>
-        <Route path='/posts/:id'>
-          <PostDetails />
-        </Route>
-        <Route path='/comments/:id'>
-          <CommentDetails />
-        </Route>
-        <Route path='/albums/:id'>
-          <AlbumDetails />
-        </Route>
-        <Route path='/photos/:id'>
-          <PhotoDetails />
-        </Route>
-        <Route path='/todos/:id'>
-          <TodoDetails />
-        </Route>
-        <Route path='/users/:id'>
-          <UserDetails />
-        </Route>
-      </Switch>
-    </Router>
-  </div>
-  );
+function App() {
+    return (
+        <div className="App">
+            <Navigation/>
+            <Routes/>
+        </div>
+    );
 }
 
-
 export default App
-
-
-
-
-
-
-
-
-
-
 
 
 // Link,
@@ -92,14 +21,6 @@ export default App
 //     useParams,
 //     useRouteMatch,
 //     useHistory,
-
-
-
-
-
-
-
-
 
 
 // function Posts() {
@@ -123,20 +44,6 @@ export default App
 //       </div>
 //   );
 // }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 // function Home() {
@@ -170,8 +77,6 @@ export default App
 // function Users() {
 //   return <h2>Users</h2>;
 // }
-
-
 
 
 // <Router>
