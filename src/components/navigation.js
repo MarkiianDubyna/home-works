@@ -1,18 +1,18 @@
 import './navigation.css';
-import {Link} from "react-router-dom";
+import {NavLink} from "react-router-dom";
 export default function Navigation () {
 
     return (
         <div className="navigation">
             <div className="nav_buttons">
-                <Link to='/posts'>Posts</Link>
-                <Link to='/comments'>Comments</Link>
-                <Link to='/albums'>Albums</Link>
-                <Link to='/photos'>Photos</Link>
-                <Link to='/todos'>Todos</Link>
-                <Link to='/users'>Users</Link>
+                <NavLink to='/posts' exact >Posts</NavLink>
+                <NavLink to='/comments' exact >Comments</NavLink>
+                <NavLink to='/albums' exact >Albums</NavLink>
+                <NavLink to='/photos' exact >Photos</NavLink>
+                <NavLink to='/todos' exact >Todos</NavLink>
+                <NavLink to='/users' exact >Users</NavLink>
             </div>
-            <div className="navigation_line"></div>
+            <div className="navigation_line"/>
         </div>
     )
 }
