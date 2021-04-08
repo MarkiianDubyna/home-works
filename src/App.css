@@ -7,6 +7,7 @@ header {
     display: flex;
     column-gap: 30px;
     align-items: center;
+    margin-top: 5px;
 }
 
 header a {
@@ -30,12 +31,14 @@ header a {
 input {
     border-radius: 4px;
     border: none;
+    margin: 0 5px;
 }
 
 button {
     border-radius: 6px;
     border: none;
     background: azure;
+    margin: 0 5px;
 }
 
 button:active {
