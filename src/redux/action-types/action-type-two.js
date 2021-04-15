@@ -1,0 +1,3 @@
+export const INC_COUNTER_TWO = 'INC_COUNTER_TWO';
+export const DEC_COUNTER_TWO = 'DEC_COUNTER_TWO';
+export const RESET_COUNTER_TWO = 'RESET_COUNTER_TWO';
